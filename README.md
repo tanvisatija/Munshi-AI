@@ -48,7 +48,7 @@ New agents slot in without touching the core (see [Adding an agent](#adding-a-ne
 - **Business Visibility Score**: the merchant estimates what share of sales runs through Paytm. This is the Paytm-consolidation growth lever ("the more of your business runs through Paytm, the sharper these insights get").
 - Plain-language AI summary with an **English / Hinglish** toggle
 
-**Layer 2: Advise.** One alerts feed, split into **⚠ Risk & Compliance** and **💡 Growth Opportunities**
+**Layer 2: Advise.** One alerts feed, split into **Risk & Compliance** and **Growth Opportunities**
 - MDR hero card, followed by a detail view with the classification breakdown, 6-month cost history, forward range, and 4 recommendation cards:
   1. ITC recovery summary: a real downloadable **CSV + PDF**
   2. Convert repeat >₹2,000 payers to **UPI Autopay** (exempt)
