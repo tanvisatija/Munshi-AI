@@ -1,7 +1,5 @@
 # Munshi AI — Paytm Merchant Growth Copilot
 
-> Built for **Paytm "Build for India" AI Hackathon — Track 1: Merchant Growth AI**
-
 Munshi AI is an AI copilot for Paytm merchants built on one core idea: a **Merchant Signal Engine** that reads a merchant's own transaction data and turns any signal (a new regulation, a growth opportunity, a customer about to leave) into:
 
 1. **What changed**
