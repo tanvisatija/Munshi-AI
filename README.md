@@ -19,6 +19,21 @@ New agents slot in without touching the core (see [Adding an agent](#adding-a-ne
 
 ---
 
+![Munshi AI dashboard](docs/img/dashboard.png)
+
+*Home: health score, the new UPI fee in rupees, alerts split into risk and growth.*
+
+| The flagship alert | Churn win-back |
+|---|---|
+| [![MDR alert](docs/img/alert-mdr.png)](docs/img/alert-mdr.png) | [![Churn](docs/img/churn.png)](docs/img/churn.png) |
+| The Oct 2026 UPI MDR rule applied to this shop's own 90 days: an exact cost, a forward range with its assumption, and 4 compliant fixes. | A scikit-learn churn model ranks customers who stopped coming, and turns that into a one-tap cashback offer. |
+
+| 3D launch screen | On a phone |
+|---|---|
+| [![3D splash](docs/img/splash-3d.png)](docs/img/splash-3d.png) | [![Mobile](docs/img/mobile.png)](docs/img/mobile.png) |
+
+---
+
 ## The rule, modelled precisely
 
 - From **15 Oct 2026**: **0.4% MDR**, **capped at ₹300 per transaction**, on P2M UPI payments **above ₹2,000**.
