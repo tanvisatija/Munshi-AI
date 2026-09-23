@@ -1,0 +1,38 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="256" cy="256" r="256"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <circle cx="256" cy="256" r="256" fill="#002E6E"/>
+
+  <!-- subtle inner ring for depth -->
+  <circle cx="256" cy="256" r="256" fill="none" stroke="#00204f" stroke-width="4" opacity="0.6"/>
+
+  <g clip-path="url(#circleClip)">
+    <!-- soft accent glow bottom-right -->
+    <circle cx="400" cy="400" r="160" fill="#00BAF2" opacity="0.08"/>
+  </g>
+
+  <!-- M monogram, right stroke becomes an upward growth arrow -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- left leg of M -->
+    <path d="M 148 366 L 148 172" stroke="#FFFFFF" stroke-width="34"/>
+    <!-- left diagonal down to valley -->
+    <path d="M 148 172 L 256 280" stroke="#FFFFFF" stroke-width="34"/>
+    <!-- right diagonal up (still part of the M) -->
+    <path d="M 256 280 L 332 176" stroke="#FFFFFF" stroke-width="34"/>
+    <!-- growth arrow continuation, in accent cyan -->
+    <path d="M 332 176 L 396 116" stroke="#00BAF2" stroke-width="34"/>
+  </g>
+
+  <!-- arrowhead -->
+  <g fill="#00BAF2">
+    <path d="M 396 116 L 350 122 L 380 148 Z"/>
+  </g>
+
+  <!-- small base line under the arrow tip to read clearly as a chart uptick -->
+  <circle cx="396" cy="116" r="6" fill="#FFFFFF"/>
+</svg>

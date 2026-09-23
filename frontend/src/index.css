@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-canvas text-navy-900 font-sans antialiased; }
+  h1, h2, h3, h4 { @apply font-heading font-semibold text-navy; }
+}
+
+@layer components {
+  .card { @apply min-w-0 rounded-card bg-white shadow-card; }
+  .label { @apply text-[11px] font-semibold uppercase tracking-wide text-slate-500; }
+  .pill { @apply inline-flex items-center gap-1 whitespace-nowrap rounded-full px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide; }
+  .num { @apply font-heading font-bold tabular-nums text-navy; }
+}
+
+/* Skeleton shimmer: a grey block with a light sweep moving across it. */
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: #e6ebf2;
+  border-radius: 10px;
+}
+.skeleton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.75), transparent);
+  animation: shimmer 1.3s infinite;
+}
+@keyframes shimmer { 100% { transform: translateX(100%); } }
+
+/* Hide scrollbars on horizontal chip rows */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 8px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton::after { animation: none; }
+}
